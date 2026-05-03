@@ -3,34 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { InputGroup } from "@heroui/react";
-
-const SearchIcon = (props) => (
-  <svg
-    aria-hidden="true"
-    fill="none"
-    focusable="false"
-    height="1em"
-    role="presentation"
-    viewBox="0 0 24 24"
-    width="1em"
-    {...props}
-  >
-    <path
-      d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    />
-    <path
-      d="M22 22L20 20"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    />
-  </svg>
-);
+import { FiSearch } from "react-icons/fi";
 
 export default function Navbar() {
   return (
@@ -67,7 +40,7 @@ export default function Navbar() {
           <div className="max-w-[240px] w-full">
             <InputGroup className="bg-indigo-50/50 hover:bg-indigo-100/50 transition-colors rounded-full overflow-hidden px-3">
               <InputGroup.Prefix>
-                <SearchIcon size={18} className="text-slate-400" />
+                <FiSearch className="text-slate-400 text-lg" />
               </InputGroup.Prefix>
               <InputGroup.Input
                 className="bg-transparent text-sm py-2 px-2 focus:outline-none w-full"

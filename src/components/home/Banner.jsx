@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 
 export default function Banner() {
   const imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuAwGZbOslyZm9qh1L5daqv1ZGLnL9INmLbL2ix9KEn53YZ6hT6RodWYUhxSyjLIFcSmONxAfTIbfvtIKFXhL7Zpm19jNjl6vzIs0vfgPg2m9Cxor9yzO21eCMSqGmEo0udfaTpHMDeSs10-d7fcwBAH9aOSac4kle0JZIG3e6AFCqmmoSO2W90dGjJlw_qoKJhh4w7bzvQATEXz_QOH4Gv_-arZ7GfG8qe93jbmqIsmACKl-49LVcl5unY_PIMc0S6j4167idCIGJI";
@@ -21,10 +22,7 @@ export default function Banner() {
             className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-8 py-3.5 rounded-xl w-max transition-colors flex items-center gap-2 shadow-sm"
           >
             Browse Now
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
+            <FiArrowRight className="text-xl" />
           </Link>
         </div>
 
