@@ -9,6 +9,22 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images-na.ssl-images-amazon.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'eloquentjavascript.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'm.media-amazon.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scalar.library.yorku.ca',
+      },
     ],
   },
 };

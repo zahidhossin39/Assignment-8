@@ -42,7 +42,7 @@
     "description": "A modern introduction to programming and the JavaScript language, perfect for web developers.",
     "category": "Tech",
     "available_quantity": 6,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1308260856i/297554.jpg"
+    "image_url": "https://eloquentjavascript.net/img/cover.jpg"
   },
   {
     "id": "6",
@@ -51,7 +51,7 @@
     "description": "An exploration of 15 billion years of cosmic evolution and the development of science and civilization.",
     "category": "Science",
     "available_quantity": 4,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388621824i/55030.jpg"
+    "image_url": "https://scalar.library.yorku.ca/star-stuff/media/Cosmos%20-%20Carl%20Sagan.jpg"
   },
   {
     "id": "7",
@@ -60,7 +60,7 @@
     "description": "A dystopian story about total surveillance and the loss of individual freedom in a future society.",
     "category": "Story",
     "available_quantity": 7,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327144697i/11561321.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1532714506i/40961427.jpg"
   },
   {
     "id": "8",
@@ -78,7 +78,7 @@
     "description": "A brief history of humankind, exploring how biology and history have defined us as a species.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1590321849i/23692271.jpg"
+    "image_url": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg"
   },
   {
     "id": "10",
@@ -96,7 +96,7 @@
     "description": "A deep dive into the core mechanics of the JavaScript language, focusing on scope and closures.",
     "category": "Tech",
     "available_quantity": 5,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1580211110i/49816677.jpg"
+    "image_url": "https://raw.githubusercontent.com/getify/You-Dont-Know-JS/2nd-ed/get-started/images/cover.png"
   },
   {
     "id": "12",
