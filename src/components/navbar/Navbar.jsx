@@ -2,34 +2,43 @@
 
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { InputGroup } from "@heroui/react";
 import { FiSearch } from "react-icons/fi";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const getLinkClasses = (path) => {
+    return pathname === path
+      ? "text-indigo-600 font-semibold relative h-full flex items-center after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:w-full after:h-[2px] after:bg-indigo-600"
+      : "text-slate-500 font-medium hover:text-indigo-600 transition-colors relative h-full flex items-center";
+  };
+
   return (
     <nav className="sticky top-0 z-40 w-full bg-white border-b border-slate-200 h-16 flex items-center px-6">
       <div className="flex w-full items-center justify-between max-w-7xl mx-auto">
-        <div className="flex items-center gap-12">
-          <Link href="/" className="font-bold text-xl text-slate-800">
+        <div className="flex items-center gap-12 h-16">
+          <Link href="/" className="font-bold text-xl text-slate-800 flex items-center h-full">
             Curator Library
           </Link>
 
-          <div className="hidden md:flex items-center gap-8 h-16">
+          <div className="hidden md:flex items-center gap-8 h-full">
             <Link 
               href="/" 
-              className="text-indigo-600 font-semibold relative h-full flex items-center after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:w-full after:h-[2px] after:bg-indigo-600"
+              className={getLinkClasses("/")}
             >
               Home
             </Link>
             <Link 
               href="/books" 
-              className="text-slate-500 font-medium hover:text-indigo-600 transition-colors"
+              className={getLinkClasses("/books")}
             >
               All Books
             </Link>
             <Link 
               href="/profile" 
-              className="text-slate-500 font-medium hover:text-indigo-600 transition-colors"
+              className={getLinkClasses("/profile")}
             >
               My Profile
             </Link>

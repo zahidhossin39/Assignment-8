@@ -52,10 +52,9 @@ export default function FeaturedBooks() {
                 </div>
 
                 <Button 
-                  variant="bordered" 
+                  variant="bordered"
                   fullWidth 
-                  className="mt-3 font-medium border border-slate-200 text-slate-700 bg-white hover:bg-slate-50 transition-all active:scale-[0.98]"
-                  size="sm"
+                  className="mt-3 font-semibold border border-slate-200 text-slate-700 bg-transparent hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-md active:scale-[0.98] h-12 rounded-full"
                 >
                   View Details
                 </Button>
