@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A classic story of ambition, wealth, and the elusive American Dream set in the Roaring Twenties.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490528560i/4671.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship, teaching how to write code that is readable and maintainable.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg"
+  },
+  {
+    "id": "3",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "A landmark volume in science writing that explores the origins and eventual fate of the universe.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1333578746i/3869.jpg"
+  },
+  {
+    "id": "4",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "An adventurous story of Bilbo Baggins as he journeys to reclaim a lost treasure from a dragon.",
+    "category": "Story",
+    "available_quantity": 12,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "description": "A modern introduction to programming and the JavaScript language, perfect for web developers.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1308260856i/297554.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "description": "An exploration of 15 billion years of cosmic evolution and the development of science and civilization.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388621824i/55030.jpg"
+  },
+  {
+    "id": "7",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian story about total surveillance and the loss of individual freedom in a future society.",
+    "category": "Story",
+    "available_quantity": 7,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327144697i/11561321.jpg"
+  },
+  {
+    "id": "8",
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt & David Thomas",
+    "description": "Essential lessons for modern developers, covering everything from personal responsibility to architectural techniques.",
+    "category": "Tech",
+    "available_quantity": 2,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1401432508i/4099.jpg"
+  },
+  {
+    "id": "9",
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "A brief history of humankind, exploring how biology and history have defined us as a species.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1590321849i/23692271.jpg"
+  },
+  {
+    "id": "10",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A story of innocence and injustice in the Deep South, told through the eyes of young Scout Finch.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg"
+  },
+  {
+    "id": "11",
+    "title": "You Don't Know JS Yet",
+    "author": "Kyle Simpson",
+    "description": "A deep dive into the core mechanics of the JavaScript language, focusing on scope and closures.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1580211110i/49816677.jpg"
+  },
+  {
+    "id": "12",
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A revolutionary book that explains the theory of evolution from the perspective of the gene.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1366758096i/61535.jpg"
+  }
+]

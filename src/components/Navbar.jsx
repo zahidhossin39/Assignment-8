@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Input } from "@heroui/react";
+import { InputGroup } from "@heroui/react";
 
 const SearchIcon = (props) => (
   <svg
@@ -65,13 +65,16 @@ export default function Navbar() {
 
         <div className="flex items-center gap-6 flex-1 justify-end">
           <div className="max-w-[240px] w-full">
-            <Input
-              className="bg-indigo-50/50 hover:bg-indigo-100/50 transition-colors rounded-full overflow-hidden"
-              placeholder="Search books..."
-              size="sm"
-              startContent={<SearchIcon size={18} className="text-slate-400 ml-2" />}
-              type="search"
-            />
+            <InputGroup className="bg-indigo-50/50 hover:bg-indigo-100/50 transition-colors rounded-full overflow-hidden px-3">
+              <InputGroup.Prefix>
+                <SearchIcon size={18} className="text-slate-400" />
+              </InputGroup.Prefix>
+              <InputGroup.Input
+                className="bg-transparent text-sm py-2 px-2 focus:outline-none w-full"
+                placeholder="Search books..."
+                type="search"
+              />
+            </InputGroup>
           </div>
           
           <div className="flex items-center gap-6 ml-4">
