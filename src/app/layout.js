@@ -5,6 +5,8 @@ import Announcement from "@/components/home/Announcement";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import Footer from "@/components/footer/Footer";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,6 +34,7 @@ export default function RootLayout({ children }) {
         <main className="flex-grow">
           {children}
         </main>
+        <Footer />
         <ToastContainer 
           position="top-center"
           autoClose={3000}
