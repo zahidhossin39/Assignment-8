@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -51,13 +53,15 @@ export default function TrendingBooks() {
                   <p className="text-sm text-slate-500 mt-0.5 line-clamp-1">{book.author}</p>
                 </div>
 
-                <Button 
-                  variant="bordered"
-                  fullWidth 
-                  className="mt-3 font-semibold border border-slate-200 text-slate-700 bg-transparent hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-md active:scale-[0.98] h-12 rounded-full"
-                >
-                  View Details
-                </Button>
+                <Link href={`/books/${book.id}`} className="w-full mt-3 block">
+                  <Button 
+                    variant="bordered"
+                    fullWidth 
+                    className="font-semibold border border-slate-200 text-slate-700 bg-transparent hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-md active:scale-[0.98] h-12 rounded-full"
+                  >
+                    View Details
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           );

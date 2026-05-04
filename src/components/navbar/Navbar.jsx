@@ -10,7 +10,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const getLinkClasses = (path) => {
-    return pathname === path
+    const isActive = path === "/" ? pathname === "/" : pathname.startsWith(path);
+    return isActive
       ? "text-indigo-600 font-semibold relative h-full flex items-center after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:w-full after:h-[2px] after:bg-indigo-600"
       : "text-slate-500 font-medium hover:text-indigo-600 transition-colors relative h-full flex items-center";
   };
