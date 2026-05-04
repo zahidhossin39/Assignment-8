@@ -46,7 +46,6 @@ export default function RootLayout({ children }) {
           draggable
           pauseOnHover
           theme="light"
-          progressClassName="!bg-emerald-500"
         />
       </body>
     </html>

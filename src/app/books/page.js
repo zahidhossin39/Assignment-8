@@ -1,15 +1,26 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import booksData from "../../../public/data.json";
 import { Card, CardContent, CardFooter, Button, InputGroup } from "@heroui/react";
 import { FiSearch } from "react-icons/fi";
 
-export default function BooksPage() {
+function BooksContent() {
+  const searchParams = useSearchParams();
+  const initialSearch = searchParams.get("search") || "";
+  
   const [activeCategory, setActiveCategory] = useState("All Books");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState(initialSearch);
+
+  useEffect(() => {
+    const search = searchParams.get("search");
+    if (search !== null) {
+      setSearchQuery(search);
+    }
+  }, [searchParams]);
 
   const categories = ["All Books", "Story", "Tech", "Science"];
 
@@ -121,5 +132,13 @@ export default function BooksPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function BooksPage() {
+  return (
+    <React.Suspense fallback={<div className="flex justify-center p-12">Loading library...</div>}>
+      <BooksContent />
+    </React.Suspense>
   );
 }

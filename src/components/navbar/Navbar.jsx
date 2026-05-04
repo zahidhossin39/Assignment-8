@@ -1,19 +1,41 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { InputGroup } from "@heroui/react";
 import { FiSearch } from "react-icons/fi";
+import { authClient } from "@/lib/auth-client";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const { data: session, isPending } = authClient.useSession();
 
   const getLinkClasses = (path) => {
     const isActive = path === "/" ? pathname === "/" : pathname.startsWith(path);
     return isActive
       ? "text-indigo-600 font-semibold relative h-full flex items-center after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:w-full after:h-[2px] after:bg-indigo-600"
       : "text-slate-500 font-medium hover:text-indigo-600 transition-colors relative h-full flex items-center";
+  };
+
+  const handleLogout = async () => {
+    await authClient.signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          window.location.href = "/";
+        },
+      },
+    });
+  };
+
+  const handleSearch = (e) => {
+    if (e.key === "Enter" && searchQuery.trim()) {
+      router.push(`/books?search=${encodeURIComponent(searchQuery.trim())}`);
+      setSearchQuery("");
+    }
   };
 
   return (
@@ -37,12 +59,14 @@ export default function Navbar() {
             >
               All Books
             </Link>
-            <Link 
-              href="/profile" 
-              className={getLinkClasses("/profile")}
-            >
-              My Profile
-            </Link>
+            {session && (
+              <Link 
+                href="/profile" 
+                className={getLinkClasses("/profile")}
+              >
+                My Profile
+              </Link>
+            )}
           </div>
         </div>
 
@@ -56,23 +80,31 @@ export default function Navbar() {
                 className="bg-transparent text-sm py-2 px-2 focus:outline-none w-full"
                 placeholder="Search books..."
                 type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyDown={handleSearch}
               />
             </InputGroup>
           </div>
           
           <div className="flex items-center gap-6 ml-4">
-            <Link 
-              href="/login" 
-              className="text-sm font-semibold text-slate-500 hover:text-indigo-600"
-            >
-              Login
-            </Link>
-            <Link 
-              href="/logout" 
-              className="text-sm font-semibold text-indigo-600 hover:opacity-80 transition-opacity"
-            >
-              Logout
-            </Link>
+            {!isPending && !session ? (
+              <Link 
+                href="/login" 
+                className="text-sm font-semibold text-slate-500 hover:text-indigo-600"
+              >
+                Login
+              </Link>
+            ) : null}
+            
+            {session ? (
+              <button 
+                onClick={handleLogout}
+                className="text-sm font-semibold text-indigo-600 hover:opacity-80 transition-opacity cursor-pointer"
+              >
+                Logout
+              </button>
+            ) : null}
           </div>
         </div>
       </div>
