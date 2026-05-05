@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { InputGroup } from "@heroui/react";
@@ -11,8 +11,13 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
+  const [imgError, setImgError] = useState(false);
 
   const { data: session, isPending } = authClient.useSession();
+
+  useEffect(() => {
+    setImgError(false);
+  }, [session?.user?.image]);
 
   const getLinkClasses = (path) => {
     const isActive = path === "/" ? pathname === "/" : pathname.startsWith(path);
@@ -98,12 +103,29 @@ export default function Navbar() {
             ) : null}
             
             {session ? (
-              <button 
-                onClick={handleLogout}
-                className="text-sm font-semibold text-indigo-600 hover:opacity-80 transition-opacity cursor-pointer"
-              >
-                Logout
-              </button>
+              <div className="flex items-center gap-5">
+                <button 
+                  onClick={handleLogout}
+                  className="text-sm font-semibold text-indigo-600 hover:opacity-80 transition-opacity cursor-pointer"
+                >
+                  Logout
+                </button>
+                
+                <Link href="/profile" className="flex items-center justify-center relative w-10 h-10 rounded-full border border-indigo-600 bg-indigo-100 overflow-hidden shrink-0 hover:ring-2 hover:ring-indigo-400 hover:ring-offset-1 transition-all">
+                  {session.user.image && !imgError ? (
+                    <img 
+                      src={session.user.image} 
+                      alt={session.user.name || "Profile"} 
+                      className="w-full h-full object-cover"
+                      onError={() => setImgError(true)}
+                    />
+                  ) : (
+                    <span className="text-sm font-bold text-indigo-700 uppercase">
+                      {session.user.name ? session.user.name.charAt(0) : ""}
+                    </span>
+                  )}
+                </Link>
+              </div>
             ) : null}
           </div>
         </div>

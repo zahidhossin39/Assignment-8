@@ -33,8 +33,8 @@ export default function BookDetailsPage() {
   const isAvailable = book.available_quantity > 0;
 
 
-  const publishedYear = 2023 - (parseInt(book.id) % 5);
-  const pagesCount = 300 + (parseInt(book.id) * 12);
+  const publishedYear = 2022;
+  const pagesCount = 384;
 
   return (
     <div className="w-full bg-[#f8f9fa] min-h-screen py-10">
@@ -102,9 +102,6 @@ export default function BookDetailsPage() {
               <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
                 <p>
                   {book.description}
-                </p>
-                <p>
-                  This book is not merely about its subject matter, but about understanding the structural importance of ideas in our lives—much like the whitespace in a well-designed interface. It challenges the modern imperative, suggesting instead that our most vital insights emerge when we dig deeper.
                 </p>
               </div>
             </div>
