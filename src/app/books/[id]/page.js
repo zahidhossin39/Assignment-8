@@ -32,13 +32,15 @@ export default function BookDetailsPage() {
 
   const isAvailable = book.available_quantity > 0;
 
-
-  const publishedYear = 2022;
-  const pagesCount = 384;
+  const publishedYear = book.published_year || 2022;
+  const pagesCount = book.page_count || 300;
 
   return (
     <div className="w-full bg-[#f8f9fa] min-h-screen py-10">
-      <div className="max-w-[1000px] mx-auto bg-white rounded-[2rem] shadow-sm p-8 sm:p-12">
+      <div 
+        className="mx-auto bg-white shadow-sm p-8 sm:p-12"
+        style={{ maxWidth: "1000px", borderRadius: "2rem" }}
+      >
         <div className="flex items-center text-sm text-slate-500 mb-8 font-medium">
           <Link href="/books" className="hover:text-indigo-600 transition-colors">
             All Books
@@ -51,9 +53,12 @@ export default function BookDetailsPage() {
           <span className="text-slate-800">Details</span>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-          <div className="w-full lg:w-[45%] flex flex-col gap-6">
-            <div className="w-full aspect-[3/4] relative rounded-2xl overflow-hidden shadow-lg bg-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          <div className="lg:col-span-5 flex flex-col gap-6">
+            <div 
+              className="w-full relative rounded-2xl overflow-hidden shadow-lg bg-slate-100"
+              style={{ aspectRatio: "3/4" }}
+            >
               <Image
                 src={book.image_url}
                 alt={book.title}
@@ -76,7 +81,7 @@ export default function BookDetailsPage() {
             </div>
           </div>
 
-          <div className="w-full lg:w-[55%] flex flex-col pt-2">
+          <div className="lg:col-span-7 flex flex-col pt-2">
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight mb-4">
               {book.title}
             </h1>

@@ -118,35 +118,30 @@ export default function ProfilePage() {
             <form onSubmit={handleUpdate} className="flex flex-col gap-6">
               <div>
                 <label className="text-xs font-semibold text-slate-700 mb-1.5 block">Full Name</label>
-                <Input
-                  type="text"
-                  placeholder="Your Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  variant="bordered"
-                  radius="sm"
-                  fullWidth
-                  classNames={{
-                    inputWrapper: "border-slate-200 hover:border-indigo-400 focus-within:!border-indigo-600 focus-within:!ring-indigo-600/20 bg-slate-50/50",
-                  }}
-                />
+                <div className="relative flex items-center w-full border border-slate-200 rounded-md hover:border-indigo-400 focus-within:!border-indigo-600 focus-within:!ring-2 focus-within:!ring-indigo-600/20 transition-all bg-slate-50/50 px-3 py-2.5">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="w-full bg-transparent outline-none text-sm text-slate-700 placeholder:text-slate-400"
+                    required
+                  />
+                </div>
               </div>
 
               <div>
                 <label className="text-xs font-semibold text-slate-700 mb-1.5 block">Profile Image URL</label>
-                <Input
-                  type="url"
-                  placeholder="https://example.com/avatar.jpg"
-                  value={imageURL}
-                  onChange={(e) => setImageURL(e.target.value)}
-                  startContent={<FiLink className="text-slate-400" />}
-                  variant="bordered"
-                  radius="sm"
-                  fullWidth
-                  classNames={{
-                    inputWrapper: "border-slate-200 hover:border-indigo-400 focus-within:!border-indigo-600 focus-within:!ring-indigo-600/20 bg-slate-50/50",
-                  }}
-                />
+                <div className="relative flex items-center w-full border border-slate-200 rounded-md hover:border-indigo-400 focus-within:!border-indigo-600 focus-within:!ring-2 focus-within:!ring-indigo-600/20 transition-all bg-slate-50/50 px-3 py-2.5">
+                  <FiLink className="text-slate-400 mr-2 shrink-0 text-lg" />
+                  <input
+                    type="url"
+                    placeholder="https://example.com/avatar.jpg"
+                    value={imageURL}
+                    onChange={(e) => setImageURL(e.target.value)}
+                    className="w-full bg-transparent outline-none text-sm text-slate-700 placeholder:text-slate-400"
+                  />
+                </div>
               </div>
 
               <div className="flex justify-end mt-4">

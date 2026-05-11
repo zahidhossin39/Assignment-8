@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
 export default function Banner() {
-  const imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuAwGZbOslyZm9qh1L5daqv1ZGLnL9INmLbL2ix9KEn53YZ6hT6RodWYUhxSyjLIFcSmONxAfTIbfvtIKFXhL7Zpm19jNjl6vzIs0vfgPg2m9Cxor9yzO21eCMSqGmEo0udfaTpHMDeSs10-d7fcwBAH9aOSac4kle0JZIG3e6AFCqmmoSO2W90dGjJlw_qoKJhh4w7bzvQATEXz_QOH4Gv_-arZ7GfG8qe93jbmqIsmACKl-49LVcl5unY_PIMc0S6j4167idCIGJI";
+  const imageUrl = "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2000&auto=format&fit=crop";
 
   return (
     <div className="w-full max-w-7xl mx-auto px-6 py-8">

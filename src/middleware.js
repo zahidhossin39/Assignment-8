@@ -9,7 +9,7 @@ export async function middleware(request) {
     });
     
     const sessionData = await res.json();
-    const session = sessionData ? (sessionData.session || sessionData.user) : null;
+    const session = sessionData?.session || sessionData?.user || null;
 
     const pathname = request.nextUrl.pathname;
 
@@ -26,6 +26,7 @@ export async function middleware(request) {
     }
 
   } catch (error) {
+    // Silently fail and proceed
   }
 
   return NextResponse.next();

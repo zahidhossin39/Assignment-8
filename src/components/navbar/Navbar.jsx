@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { InputGroup } from "@heroui/react";
 import { FiSearch } from "react-icons/fi";
 import { authClient } from "@/lib/auth-client";
 
@@ -77,19 +76,17 @@ export default function Navbar() {
 
         <div className="flex items-center gap-6 flex-1 justify-end">
           <div className="max-w-[240px] w-full">
-            <InputGroup className="bg-indigo-50/50 hover:bg-indigo-100/50 transition-colors rounded-full overflow-hidden px-3">
-              <InputGroup.Prefix>
-                <FiSearch className="text-slate-400 text-lg" />
-              </InputGroup.Prefix>
-              <InputGroup.Input
-                className="bg-transparent text-sm py-2 px-2 focus:outline-none w-full"
+            <div className="bg-indigo-50/50 hover:bg-indigo-100/50 transition-colors rounded-full overflow-hidden px-4 py-2 flex items-center border border-transparent focus-within:border-indigo-200">
+              <FiSearch className="text-slate-400 text-lg mr-2" />
+              <input
+                className="bg-transparent text-sm focus:outline-none w-full text-slate-700 placeholder:text-slate-400"
                 placeholder="Search books..."
                 type="search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={handleSearch}
               />
-            </InputGroup>
+            </div>
           </div>
           
           <div className="flex items-center gap-6 ml-4">

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import booksData from "../../../public/data.json";
-import { Card, CardContent, CardFooter, Button, InputGroup } from "@heroui/react";
+import { Card, CardContent, CardFooter, Button } from "@heroui/react";
 import { FiSearch } from "react-icons/fi";
 
 function BooksContent() {

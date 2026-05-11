@@ -6,7 +6,9 @@
     "description": "A classic story of ambition, wealth, and the elusive American Dream set in the Roaring Twenties.",
     "category": "Story",
     "available_quantity": 5,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490528560i/4671.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490528560i/4671.jpg",
+    "published_year": 1925,
+    "page_count": 180
   },
   {
     "id": "2",
@@ -15,7 +17,9 @@
     "description": "A handbook of agile software craftsmanship, teaching how to write code that is readable and maintainable.",
     "category": "Tech",
     "available_quantity": 3,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg",
+    "published_year": 2008,
+    "page_count": 464
   },
   {
     "id": "3",
@@ -24,7 +28,9 @@
     "description": "A landmark volume in science writing that explores the origins and eventual fate of the universe.",
     "category": "Science",
     "available_quantity": 8,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1333578746i/3869.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1333578746i/3869.jpg",
+    "published_year": 1988,
+    "page_count": 212
   },
   {
     "id": "4",
@@ -33,7 +39,9 @@
     "description": "An adventurous story of Bilbo Baggins as he journeys to reclaim a lost treasure from a dragon.",
     "category": "Story",
     "available_quantity": 12,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg",
+    "published_year": 1937,
+    "page_count": 310
   },
   {
     "id": "5",
@@ -42,7 +50,9 @@
     "description": "A modern introduction to programming and the JavaScript language, perfect for web developers.",
     "category": "Tech",
     "available_quantity": 6,
-    "image_url": "https://eloquentjavascript.net/img/cover.jpg"
+    "image_url": "https://eloquentjavascript.net/img/cover.jpg",
+    "published_year": 2011,
+    "page_count": 472
   },
   {
     "id": "6",
@@ -51,7 +61,9 @@
     "description": "An exploration of 15 billion years of cosmic evolution and the development of science and civilization.",
     "category": "Science",
     "available_quantity": 4,
-    "image_url": "https://scalar.library.yorku.ca/star-stuff/media/Cosmos%20-%20Carl%20Sagan.jpg"
+    "image_url": "https://scalar.library.yorku.ca/star-stuff/media/Cosmos%20-%20Carl%20Sagan.jpg",
+    "published_year": 1980,
+    "page_count": 365
   },
   {
     "id": "7",
@@ -60,7 +72,9 @@
     "description": "A dystopian story about total surveillance and the loss of individual freedom in a future society.",
     "category": "Story",
     "available_quantity": 7,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1532714506i/40961427.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1532714506i/40961427.jpg",
+    "published_year": 1949,
+    "page_count": 328
   },
   {
     "id": "8",
@@ -69,7 +83,9 @@
     "description": "Essential lessons for modern developers, covering everything from personal responsibility to architectural techniques.",
     "category": "Tech",
     "available_quantity": 2,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1401432508i/4099.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1401432508i/4099.jpg",
+    "published_year": 1999,
+    "page_count": 352
   },
   {
     "id": "9",
@@ -78,7 +94,9 @@
     "description": "A brief history of humankind, exploring how biology and history have defined us as a species.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg"
+    "image_url": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg",
+    "published_year": 2011,
+    "page_count": 443
   },
   {
     "id": "10",
@@ -87,7 +105,9 @@
     "description": "A story of innocence and injustice in the Deep South, told through the eyes of young Scout Finch.",
     "category": "Story",
     "available_quantity": 10,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg",
+    "published_year": 1960,
+    "page_count": 281
   },
   {
     "id": "11",
@@ -96,7 +116,9 @@
     "description": "A deep dive into the core mechanics of the JavaScript language, focusing on scope and closures.",
     "category": "Tech",
     "available_quantity": 5,
-    "image_url": "https://raw.githubusercontent.com/getify/You-Dont-Know-JS/2nd-ed/get-started/images/cover.png"
+    "image_url": "https://raw.githubusercontent.com/getify/You-Dont-Know-JS/2nd-ed/get-started/images/cover.png",
+    "published_year": 2020,
+    "page_count": 160
   },
   {
     "id": "12",
@@ -105,6 +127,8 @@
     "description": "A revolutionary book that explains the theory of evolution from the perspective of the gene.",
     "category": "Science",
     "available_quantity": 6,
-    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1366758096i/61535.jpg"
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1366758096i/61535.jpg",
+    "published_year": 1976,
+    "page_count": 360
   }
 ]
